@@ -38,7 +38,7 @@ public class SecurityConfig {
                 CorsConfiguration config = new CorsConfiguration();
                 // allow common local dev origins (any localhost port) and 127.0.0.1
                 // Using allowedOriginPatterns lets us accept http://localhost:5173, :5174, etc.
-                config.setAllowedOriginPatterns(List.of("http://localhost:*", "http://127.0.0.1:*","*.vercel.app"));
+                config.setAllowedOriginPatterns(List.of("http://localhost:*", "http://127.0.0.1:*","https://*.vercel.app"));
                 // Allow all methods used by the app during development
                 config.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS", "HEAD"));
                 // Allow common headers and let the browser send other headers during dev
